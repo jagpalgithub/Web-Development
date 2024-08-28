@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid red;
+            /* width: 1020px; */
+             /* margin: auto; */
+            min-height: 40vh;
+            margin: 23px auto;
+            background-color: aquamarine;
+            width: 80vw;
+            /* text-overflow:ellipsis; */
+            
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid red;
+            /* width: 1020px; */
+             /* margin: auto; */
+            min-height: 10vh;
+            margin: 23px auto;
+            background-color: aquamarine;
+            width: 80vw;
+            /* text-overflow:ellipsis; */
+
+        }
+
+        .container > div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+
+        .container > div > div{
+            border: 2px solid green;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class = "box">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam ratione quidem cupiditate facere id hic
+        inventore tenetur eveniet blanditiis fuga commodi eum iure vitae dolor animi, alias soluta nostrum deserunt
+        quisquam saepe similique? Minima dolorum dignissimos blanditiis cumque assumenda laudantium earum veritatis
+        tenetur praesentium quia.
+    </div>
+    <div class = "container">
+        <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam ratione quidem cupiditate facere id hic
+        inventore tenetur eveniet blanditiis fuga commodi eum iure vitae dolor animi, alias soluta nostrum deserunt
+        quisquam saepe similique? Minima dolorum dignissimos blanditiis cumque assumenda laudantium earum veritatis
+        <div>
+        tenetur praesentium quia.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam ratione quidem cupiditate facere id hic
+        inventore tenetur eveniet blanditiis fuga commodi eum iure vitae dolor animi, alias soluta nostrum deserunt
+        quisquam saepe similique? Minima dolorum dignissimos blanditiis cumque assumenda laudantium earum veritatis
+        tenetur praesentium quia.
+    </div>
+</div>
+    </div>
+</body>
+
+</html>

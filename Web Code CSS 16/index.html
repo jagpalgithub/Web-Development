@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0; 
+        }
+        .box{
+            background-color: red;
+        }
+        .box1{
+            color: aqua;
+            padding: 10px;
+            border: 2px solid blue;
+            margin: 25px;
+            height: 200px;
+            box-sizing: border-box;
+            
+        }
+        .box2{
+            color: rgb(210, 204, 92);
+            padding: 10px;
+            border: 2px solid blue;
+            margin: 50px;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class = "box box1"> I am a senior developer one </div>
+    <div class = "box box2"> I am a senior developer Two </div>
+</body>
+</html>
