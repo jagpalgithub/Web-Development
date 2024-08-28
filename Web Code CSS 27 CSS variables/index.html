@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+
+        :root{
+            --Color: rgb(255, 102, 0);
+            --Seccolor: rgb(234, 203, 148);
+            --defpad: 35px;
+
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .nav{
+            /* background-color: rgb(79, 215, 79); */
+            background-color:var(--Color);
+        }
+        .container{
+            /* background-color: rgb(60, 121, 60); */
+            background-color: var(--Seccolor); 
+        }
+
+        .nav ul{
+            display:flex;
+            /* padding: 0px 0px 0px 0px; */
+
+        }
+        .nav ul li{
+            --Color1: rgb(98, 237, 205);
+            list-style: none;
+            /* padding: 15px 25px 16px 63px; */
+            /* margin: 25px 25px 25px 25px; */
+            color: var(--Color1, blue);
+            border: 2px solid var(--Seccolor);
+            /* text-align: center; */
+            padding: var(--defpad);
+        }
+        .nav ul li:first-child{--Color: rgb(228, 98, 237);
+            list-style: none;
+            /* padding: 15px 25px 16px 63px; */
+            /* margin: 25px 25px 25px 25px; */
+            color: var(--Color);
+            text-align: center;
+            /* padding: 15px; */
+        }
+    </style>
+</head>
+<body>
+    <div class = "nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti corrupti magni debitis fugit accusantium, in ipsum minima laborum magnam delectus, assumenda ex, id quos quo officiis minus at nobis recusandae facere quia ullam aperiam? Error placeat consequatur cumque velit deserunt dolorem perspiciatis maxime minima dolorum.
+    </div>>
+</body>
+</html>
